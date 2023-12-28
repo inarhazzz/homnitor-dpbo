@@ -1,0 +1,72 @@
+.bg{
+    background-color: #ecd8a2;
+}
+.top{
+    background-color:#ecd8a2;
+}
+
+.info{
+    background-color: #84150d;
+}
+
+.label {
+    color: #431004;
+}
+
+.entry{
+    background:#84150d;
+    border-radius: 10px;
+    border-width: 10px;
+}
+.ktk{
+    background-color: rgb(149, 191, 191);
+}
+.info{
+    color:#ecd8a2;
+    font-weight: bold;
+    /* text-align: left; */
+}
+
+/* .rwy{
+    text-align: left;
+} */
+
+.entry:hover {
+    background-color:#9f250a;
+    border-radius: 1000px;
+}
+
+#listrik{
+    font-size: 30px;
+    color: #431004;
+    font-weight: bold;
+}
+
+#status{
+    margin-left: 15px;
+    color: #e8c295;
+}
+
+#riwayat{
+    font-size: 20px;
+    font-weight: bold;
+    color:#d6512f;
+    margin-left: 15px;
+}
+
+#bulan{
+    color: #ffffff;
+    /* -webkit-text-stroke-width: 100; */
+    border-radius: 50px;
+    margin: 5px;
+}
+
+#bayar{
+    color:aqua;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#boxx{
+    color:#431004;
+}

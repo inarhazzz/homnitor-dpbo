@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=gtk_app
+Exec=gtk_app
+Icon=org.gtk.ver1
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

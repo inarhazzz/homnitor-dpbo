@@ -1,0 +1,47 @@
+.latar{
+    background-color:#d6512f;
+}
+
+.head{
+    background-color:#d6512f;
+}
+
+.subb{
+    background-color:#84150d;
+    
+}
+
+.subb:hover{
+    background-color:#9f250a;
+    
+}
+
+.entry{
+    background-color:#e8c295;
+    margin-bottom: 10px;
+    
+}
+
+#status{
+    margin-left: 15px;
+    color: #92642c;
+}
+
+#bulan{
+    color:#84150d;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+#subm{
+    color:#84150d;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+#bayar{
+    color:#84150d;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="GtkAppWindow" parent="GtkApplicationWindow">
+    <property name="default-width">350</property>
+    <property name="default-height">700</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header_bar">
+        <style>
+          <class name="top" />
+        </style>
+        <child type="end">
+          <object class="GtkMenuButton">
+            <property name="icon-name">open-menu-symbolic</property>
+            <property name="menu-model">primary_menu</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkScrolledWindow" id="scrolled_window">
+        <property name="hexpand">true</property>
+        <property name="vexpand">true</property>
+        <property name="width-request">350</property>
+        <property name="height-request">700</property>
+        <child>
+          <object class="GtkBox" id="main_box">
+            <style>
+              <class name="bg" />
+            </style>
+            <property name="orientation">vertical</property>
+
+            <child>
+              <object class="GtkGrid">
+                <style>
+                  <class name="kotak"/>
+                </style>
+                <property name="column-homogeneous">True</property>
+                <property name="row-homogeneous">True</property>
+
+                <child>
+                  <object class="GtkLabel" id="listrik">
+                    <style>
+                      <class name="lst" />
+                    </style>
+                    <property name="label">Listrik</property>
+                    <property name="name">listrik</property>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkButton" id="tambah">
+                    <style>
+                      <class name="entry" />
+                    </style>
+                    <property name="label">Tambah+</property>
+                    <property name="name">bulan</property>
+                    <property name="width-request">50</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">9</property>
+                    </layout>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkLabel" id="riwayat">
+                    <style>
+                      <class name="rwy" />
+                    </style>
+                    <property name="label">Riwayat Pembayaran</property>
+                    <property name="name">riwayat</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">2</property>
+                    </layout>
+                  </object>
+                </child>
+
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkBox" id="boxx">
+                <style>
+                  <class name="ktk" />
+                </style>
+                <property name="orientation">vertical</property>
+              </object>
+            </child>
+
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Preferences</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
+        <attribute name="action">win.show-help-overlay</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_About Homnitor</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+
+  <menu id="secondary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_File</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>
+
